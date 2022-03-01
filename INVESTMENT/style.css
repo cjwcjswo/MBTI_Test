@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main-page {
+    display: none;
+}
+
+body {
+    background-color: RGB(28, 27, 26);
+    font-family: 'OTWelcomeRA';
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+h1, p {
+    color: whitesmoke;
+}
+
+.main-text {
+    font-size: large;
+}
+
+.main-question {
+    font-size: large;
+    font-weight: bold;
+    color: RGB(190, 58, 78);
+}
+
+.img-div {
+    width: auto;
+    overflow-x: auto;
+}

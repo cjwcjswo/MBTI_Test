@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내가 가상화폐를 투자한다면</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title-page" class="container">
+        <h1 class="mt-5 text-center">내가 가상화폐를 투자한다면..?</h1>
+        <img class="mt-5 img-responsive" style="height:350px;" src="images/down.gif"/>
+        <div class="col text-center">
+            <button type="button" class="btn btn-dark mt-5" onclick="start();">시작하기</button>
+        </div>
+        <p class="mt-5 text-center">Copyrightⓒ cjwoov</p>
+    </div>
+
+    <div id="main-page" class="container">
+        <p id="text" class="main-text mt-5 text-center"></p>
+        <div class="img-div">
+            <img class="main-img mt-5 img-responsicve" style="height:300px;" src=""/>
+        </div>
+        <p id="question" class="main-question mt-5 text-center"></p>
+        <div id="choice">
+
+        </div>
+    </div>
+    
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="files/question.json" type="text/javascript"></script>
+    <script>
+        let questionData = JSON.parse(JSON.stringify(Questions))['questions'];
+        console.log(questionData);
+
+        function start() {
+            $('#title-page').hide();
+            $('#main-page').show();
+
+            next();
+        }
+
+        let currNum = 0;
+        function next() {
+            ++currNum;
+            let currIdx = currNum - 1;
+            let currQuestionData = questionData[currIdx];
+            
+            if (currQuestionData.img === "") {
+                $('.main-img').hide();
+            }
+            else {
+                $('.main-img').attr('src', currQuestionData.img);
+                $('.main-img').show();
+            }
+
+            $('#text').html(currQuestionData.text);
+            $('#question').html(currQuestionData.question);
+
+            for (let i = 0; i < currQuestionData.options.length; ++i)
+            {
+                let buttonHTML = `<button type="button" class="btn btn-dark mt-2" onclick="nextButton();">${currQuestionData.options[i].answer}</button></br>`;
+                console.log(buttonHTML);
+                $('#choice').append(buttonHTML);
+            }
+        }
+
+        function nextButton() {
+            $('#choice').empty();
+            next();
+        }
+
+    </script>
+</body>
+</html>
