@@ -24,9 +24,10 @@ body {
 }
 
 img {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
-    object-fit: cover;
+    height: auto;
 }
 
 .main-text {
@@ -53,12 +54,12 @@ img {
 #result-text {
     color: gray;
 }
-
+/* 
 .result-img {
     max-width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 ul {
     list-style: none;
