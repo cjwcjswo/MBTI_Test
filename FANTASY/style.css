@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#title-page {
+    display: none;
+}
+
+#main-page {
+    display: none;
+}
+
+#result-page {
+    display: none;
+}
+
+body {
+    background-color: RGB(28, 27, 26);
+    font-family: 'KOTRAHOPE';
+    color: whitesmoke;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+@media screen and (max-width: 1224px) {
+    #main-text {
+        font-size: 1rem;
+    }
+    #main-question {
+        font-size: 1rem;
+        color: salmon;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    #main-text {
+        font-size: 2rem;
+    }
+    #main-question {
+        font-size: 2rem;
+        color: salmon;
+    }
+    .btn {
+        font-size: 1.5rem;
+    }
+}
