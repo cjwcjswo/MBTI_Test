@@ -9,26 +9,26 @@ Questions = {
                 {
                     "answer": "a. 일단 저금해둔다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 이게 웬 떡?? 내 시드가 커졌군 ㅎㅎ 전부 코인에 투자한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 2,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 반은 저금하고 반은 코인에 투자한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 1,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "d. 현생의 삶을 살아야지.. 내가 사고싶었던 것들을 사며 FLEX한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 }
             ]
         },
@@ -40,47 +40,47 @@ Questions = {
             "options": [
                 {
                     "answer": "a. 나는야 단타왕! 내 자금을 50%이상 활용하여 트레이딩한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 30,
+                    "dangerScore": 2,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 소소하게 소액으로만 트레이딩 해본다",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 10,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 저런건 물리면 답도 없다. 쳐다도 보지 않는다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 }
             ]
         },
         {
             "num": 3,
-            "img": "",
+            "img": "images/praise.jpg",
             "text": "'지누코인'의 추세가 하루에서 끝나는게 아니라 나날이 상승세이다. 주위에서 사람들이 찬양을하기 시작한다.",
             "question": "이 때 당신의 선택은?",
             "options": [
                 {
                     "answer": "a. 내가 사면 하락세가 시작할 것 같다. 아무것도 하지 않는다",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 아직 늦지 않았는걸? 지금이 무릎일수도.. 매수한다!.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 15,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 어떻게든 저점이 오면 다시 매수 할 의향이 있다! 커뮤니티에 '지누코인'을 까내리는 글을 쓴다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 5,
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
                 }
             ]
         },
@@ -92,21 +92,21 @@ Questions = {
             "options": [
                 {
                     "answer": "a. 익절은 항상 옳다!! 급등 코인은 급락할 수 있으니 전부 익절한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 30,
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 이런 코인은 더 갈 수 밖에 없다..! 익절 존버!! 그냥 내비둔다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 10,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 절반정도만 팔까?? 분할 매도한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 20,
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
                 }
             ]
         },
@@ -118,15 +118,15 @@ Questions = {
             "options": [
                 {
                     "answer": "a. 그래도 수익인게 어디야? 다 팔고 깔끔하게 퇴장한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 15,
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 한번 더 위로 쏘겠지??? 기다린다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 10,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 }
             ]
         },
@@ -139,46 +139,46 @@ Questions = {
                 {
                     "answer": "a. 눈물을 머금으며 칼같이 손절한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
-                    "answer": "b. 자식까지 물려줄 생각으로 존버한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "answer": "b. 언젠간 다시 오르겠지... 존버한다!",
+                    "score": 10,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 이건 바겐세일이야...! 없는 돈까지 짜내며 추가 매수한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 20,
+                    "dangerScore": 2,
+                    "knowledgeScore": 0
                 }
             ]
         },
         {
             "num": 7,
-            "img": "",
+            "img": "images/penguin.png",
             "text": "이 와중에 '때정코인'이 하루만에 +50%까지 상승하며 미친 상승률을 보여주고있다.",
             "question": "당신의 선택은?",
             "options": [
                 {
                     "answer": "a. 지누코인을 다 팔아버리고 때정코인을 매수한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 30,
+                    "dangerScore": 1,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "b. 저건 못먹는 감이야.. 그저 부러운 눈빛으로 쳐다본다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 },
                 {
                     "answer": "c. 기회는 올 때 잡아야해! 지누 코인은 가지고 있되 돈을 빌려 때정코인을 매수한다.",
-                    "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "score": 20,
+                    "dangerScore": 2,
+                    "knowledgeScore": 0
                 }
             ]
         },
@@ -191,20 +191,20 @@ Questions = {
                 {
                     "answer": "a. 나는 한 코인을 오래가지고 있지 않는다. 짧은 주기로 트레이딩 앱을 보면서 단타위주로 거래한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 1,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "b. 완전 단타는 아니지만 그래도 길어도 2주정도만.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "c. 존버! 장기적인 매매 스타일",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 }
             ]
         },
@@ -217,14 +217,14 @@ Questions = {
                 {
                     "answer": "a. 수익은 곧 더 큰 시드! 얻은 수익금을 통해 시드로 활용하여 복리매매 형식으로 돈을 굴려나간다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 1,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "b. 수익은 모두 출금하는것이 안전하다. 원금을 지켜가며 매매한다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 }
             ]
         },
@@ -237,20 +237,46 @@ Questions = {
                 {
                     "answer": "a. 차트를 보고 코인의 추세에따라 매매를 하는 스타일이다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "b. 코인의 가치를 스스로 검색하고 파악해서 매매하는 스타일이다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
                 },
                 {
                     "answer": "c. 다른 사람의 말을 귀기울여 듣고 분위기에따라 매매하는 스타일이다.",
                     "score": 0,
-                    "type": "NONE",
-                    "category" : "I"
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
+                }
+            ]
+        },
+        {
+            "num": 9,
+            "img": "",
+            "text": "",
+            "question": "내가 가상화폐 트레이딩에서 아는정도는..?",
+            "options": [
+                {
+                    "answer": "a. 어느정도 코인의 이름은 모두 알며, 엘리엇 파동, RSI, 다이버전스 등 여러 용어들도 알고있다.",
+                    "score": 0,
+                    "dangerScore": 0,
+                    "knowledgeScore": 2
+                },
+                {
+                    "answer": "b. 대중적인 코인의 이름을 8개 이상 알고 그 외에 것은 그때그때 찾아본다.",
+                    "score": 0,
+                    "dangerScore": 0,
+                    "knowledgeScore": 1
+                },
+                {
+                    "answer": "c. 유명한 코인 외에 아무것도 모르며 주위에 대박코인이라는 말에 따라 매매하는 스타일이다.",
+                    "score": 0,
+                    "dangerScore": 0,
+                    "knowledgeScore": 0
                 }
             ]
         },

@@ -5,13 +5,22 @@
     font-style: normal;
 }
 
+#title-page {
+    display: none;
+}
+
 #main-page {
+    display: none;
+}
+
+#result-page {
     display: none;
 }
 
 body {
     background-color: RGB(28, 27, 26);
     font-family: 'OTWelcomeRA';
+    color: whitesmoke;
 }
 
 img {
@@ -20,15 +29,11 @@ img {
     object-fit: cover;
 }
 
-h1, p {
-    color: whitesmoke;
-}
-
 .main-text {
     font-size: large;
 }
 
-.main-question {
+.bold-text {
     font-size: large;
     font-weight: bold;
     color: RGB(190, 58, 78);
@@ -37,4 +42,30 @@ h1, p {
 .img-div {
     width: auto;
     overflow-x: auto;
+}
+
+.result-detail {
+    background-color: whitesmoke;
+    color: RGB(28, 27, 26);
+    border-radius: 25%;
+}
+
+#result-text {
+    color: gray;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1rem;
+    margin-right: 0.2rem;
 }

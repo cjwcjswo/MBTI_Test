@@ -20,16 +20,37 @@
     </div>
 
     <div id="main-page" class="container">
+        <div class="progress mt-5">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         <p id="text" class="main-text mt-5 text-center"></p>
         <div class="img-div">
             <img class="main-img mt-5 img-responsicve" style="height:300px;" src=""/>
         </div>
-        <p id="question" class="main-question mt-5 text-center"></p>
+        <p id="question" class="bold-text mt-5 text-center"></p>
         <div id="choice">
 
         </div>
     </div>
     
+    <div id="result-page" class="container">
+        <h1 class="mt-5 text-center" id="result-title"></h1>
+        <div class="img-div">
+            <img class="result-img mt-5 img-responsive" style="height:450px;" src=""/>
+        </div>
+        <h2 class="mt-5 text-center" id="result-text"></h2>
+        <h4 class="mt-5 text-center">
+            나의 최종 수익률은: 
+            <span id="final-score" class="bold-text">
+            </span>
+        </h4>
+        <div class="mt-5 text-center result-detail pt-5 pb-5">
+            <ul id="results">
+
+            </ul>
+        </div>
+    </div>
+
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -38,47 +59,8 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="files/question.json" type="text/javascript"></script>
-    <script>
-        let questionData = JSON.parse(JSON.stringify(Questions))['questions'];
-        console.log(questionData);
-
-        function start() {
-            $('#title-page').hide();
-            $('#main-page').show();
-
-            next();
-        }
-
-        let currNum = 0;
-        function next() {
-            ++currNum;
-            let currIdx = currNum - 1;
-            let currQuestionData = questionData[currIdx];
-            
-            if (currQuestionData.img === "") {
-                $('.main-img').hide();
-            }
-            else {
-                $('.main-img').attr('src', currQuestionData.img);
-                $('.main-img').show();
-            }
-
-            $('#text').html(currQuestionData.text);
-            $('#question').html(currQuestionData.question);
-
-            for (let i = 0; i < currQuestionData.options.length; ++i)
-            {
-                let buttonHTML = `<button type="button" class="btn btn-dark mt-2" onclick="nextButton();">${currQuestionData.options[i].answer}</button></br>`;
-                console.log(buttonHTML);
-                $('#choice').append(buttonHTML);
-            }
-        }
-
-        function nextButton() {
-            $('#choice').empty();
-            next();
-        }
-
-    </script>
+    <script src="files/result.json" type="text/javascript"></script>
+    <script src="scripts/logic.js"></script>
+    <script src="scripts/ui.js"></script>
 </body>
 </html>
