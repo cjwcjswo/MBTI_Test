@@ -29,7 +29,7 @@ function onLoad()
         
         for (let i = 0; i < resultData.details.length; ++i)
         {
-            let resultText = `<li>${resultData.details[i]}</li>`;
+            let resultText = `<li class="mt-2">${resultData.details[i]}</li>`;
             $('#results').append(resultText);
         }
 
@@ -93,15 +93,16 @@ function nextButton(score, dangerScore, knowledgeScore) {
         console.log("CurrScore: " + currScore);
         console.log("RandScore: " + randScore);
     }
+    
     currKnowledgeScore += knowledgeScore;
     currDangerScore += dangerScore;
-
+    console.log("knowledge: " + currKnowledgeScore + ", danger: " + currDangerScore);
     if (currNum > questionData.length)
     {
         let dangerLevel = calcDangerLevel(currDangerScore);
         let knowledgeLevel = calcKnowledgeLevel(currKnowledgeScore);
-        let resultPostfix = dangerLevel + "_" + knowledgeLevel;
-        window.location.href = "index.html?category=" + resultPostfix + "&s=" + currScore;
+        let resultPostfix = knowledgeLevel + "_" + dangerLevel;
+        window.location.href = "index.html?category=" + resultPostfix + "&s=" + Math.ceil(currScore);
         return;
     }
 

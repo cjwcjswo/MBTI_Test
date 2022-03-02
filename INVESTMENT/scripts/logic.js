@@ -70,3 +70,68 @@ function calcKnowledgeLevel(knowledgeScore)
         return 3;
     }
 }
+
+// SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+Kakao.init('1ccab4dd8ab9ce0e153a8c9d0b5d08a6');
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn',
+    objectType: 'feed',
+    content: {
+        title: '내가 가상화폐를 투자한다면..?',
+        description: '재미로 보는 나의 가상화폐 투자 성향! 테스트 해보세요!',
+        imageUrl:
+            'https://cjwoov-invesetment-type.netlify.app/images/penguin.png',
+        link: {
+            mobileWebUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+            webUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+        },
+    },
+    buttons: [
+        {
+            title: '테스트 시작',
+            link: {
+                mobileWebUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+                webUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+            },
+        }
+    ],
+});
+
+
+let shareCategory = getParameter('category');
+let shareScore = getParameter('s');
+let shareData = findResultData(shareCategory);
+let shareURL = `https://cjwoov-invesetment-type.netlify.app/index.html?category=${shareCategory}&s=${shareScore}`;
+let shareImgURL = `https://cjwoov-invesetment-type.netlify.app/${shareData.img}`;
+
+Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-result-btn',
+    objectType: 'feed',
+    content: {
+        title: '나의 가상화폐 투자 성향 결과는?',
+        description: shareData.title,
+        imageUrl:
+            shareImgURL,
+        link: {
+            mobileWebUrl: shareURL,
+            webUrl: shareURL,
+        },
+    },
+    buttons: [
+        {
+            title: '테스트 시작',
+            link: {
+                mobileWebUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+                webUrl: 'https://cjwoov-invesetment-type.netlify.app/',
+            },
+        },
+        {
+            title: '결과 보기',
+            link: {
+                mobileWebUrl:shareURL,
+                webUrl: shareURL,
+            },
+        }
+    ],
+});

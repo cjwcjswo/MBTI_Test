@@ -238,7 +238,7 @@ Questions = {
                     "answer": "a. 차트를 보고 코인의 추세에따라 매매를 하는 스타일이다.",
                     "score": 0,
                     "dangerScore": 0,
-                    "knowledgeScore": 1
+                    "knowledgeScore": 2
                 },
                 {
                     "answer": "b. 코인의 가치를 스스로 검색하고 파악해서 매매하는 스타일이다.",
@@ -264,7 +264,7 @@ Questions = {
                     "answer": "a. 어느정도 코인의 이름은 모두 알며, 엘리엇 파동, RSI, 다이버전스 등 여러 용어들도 알고있다.",
                     "score": 0,
                     "dangerScore": 0,
-                    "knowledgeScore": 2
+                    "knowledgeScore": 3
                 },
                 {
                     "answer": "b. 대중적인 코인의 이름을 8개 이상 알고 그 외에 것은 그때그때 찾아본다.",
